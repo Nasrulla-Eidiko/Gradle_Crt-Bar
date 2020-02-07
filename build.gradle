@@ -14,3 +14,4 @@ task iibDeploy {
       commandLine 'sh','-c', 'mqsideploy NODE -e IS -a /home/bandaru/IBM/ACET11/workspace/HTTPTASK/HTTPTASK.bar'
   }
 }
+}
