@@ -6,7 +6,7 @@ File currentDir = file(".")
 task iibDeploy {
   doLast {
     exec {
-      commandLine 'sh','-c', 'source /home/bandaru/ace-11.0.0.7/server/bin/mqsiprofile && /home/bandaru/ace-11.0.0.7/tools/mqsicreatebar -data /home/bandaru/IBM/ACET11/workspace -b /home/bandaru/IBM/ACET11/workspace/HTTPTASK/HTTPTASK.bar -a HTTPTASK -p HTTPTASK'
+      commandLine 'sh','-c', 'Source /home/bandaru/ace-11.0.0.7/server/bin/mqsiprofile && /home/bandaru/ace-11.0.0.7/tools/mqsicreatebar -data /home/bandaru/IBM/ACET11/workspace -b /home/bandaru/IBM/ACET11/workspace/HTTPTASK/HTTPTASK.bar -a HTTPTASK -p HTTPTASK'
     }
     /*exec {
       workingDir y.getAbsolutePath()
