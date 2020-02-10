@@ -9,9 +9,9 @@ task iibDeploy {
       workingDir x.getAbsolutePath()
       commandLine 'sh','-c', 'mqsicreatebar -data /home/bandaru/IBM/ACET11/workspace -b /home/bandaru/IBM/ACET11/workspace/HTTPTASK/HTTPTASK.bar -a HTTPTASK -p HTTPTASK'
     }
-    exec {
+    /*exec {
       workingDir y.getAbsolutePath()
       commandLine 'sh','-c', 'mqsideploy NODE -e IS -a /home/bandaru/IBM/ACET11/workspace/HTTPTASK/HTTPTASK.bar'
-  }
+  }*/
 }
 }
