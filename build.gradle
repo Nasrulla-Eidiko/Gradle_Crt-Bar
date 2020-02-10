@@ -7,8 +7,8 @@ println y.getAbsolutePath()
 task iibDeploy {
   doLast {
     exec {
-      y.getAbsolutePath()
-      commandLine 'sh','-c', 'mqsiprofile && mqsipackagebar -w /home/bandaru/IBM/ACET11/workspace -a /home/bandaru/IBM/ACET11/workspace/HTTPTASK/HTTPTASK.bar -k HTTPTASK'
+      x.getAbsolutePath()
+      commandLine 'sh','-c', 'mqsicreatebar -data /home/bandaru/IBM/ACET11/workspace -b /home/bandaru/IBM/ACET11/workspace/HTTPTASK/HTTPTASK.bar -a HTTPTASK -k HTTPTASK'
     }
     /*exec {
       workingDir y.getAbsolutePath()
